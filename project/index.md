@@ -109,3 +109,11 @@ For adding/editing product images use either of these 2 methods:
 #### Delete existing product
 
 Allow products to be deleted. Before a product is deleted you must display a confirmation. The product should only be deleted if the user confirms. If the user cancels, the product must not be deleted.
+
+## Level 2 (optional)
+
+Create your own API for the site. You can use any backend stack (e.g. Strapi, Wordpress REST API, Firebase, etc) but it MUST be publicly hosted on a server.
+
+The API must include all the functionality in the provided Strapi API and you can add any additional functionality.
+
+It MUST be publicly hosted and accessible, you cannot submit the API with your front end code.
