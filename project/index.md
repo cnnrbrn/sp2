@@ -24,6 +24,24 @@ Level 1 is required.
 
 Level 2 is optional.
 
+## Strapi API
+
+To start the API change directory to `api` install the npm dependecies and then run `npm run develop`
+
+```bash
+$ cd api
+$ npm install
+$ npm run develop
+```
+
+## User credentials
+
+```bash
+email: admin@admin.com
+username: admin
+password: Pass1234
+```
+
 ## Level 1 (required)
 
 ### Customer-facing pages
