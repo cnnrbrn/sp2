@@ -12,7 +12,7 @@ Design your website using your favourite tool. You will need to find a suitable 
 
 You must apply all that you have learned in your studies so far. The site must have a good user experience and UI design, following today's trends and design patterns.
 
-Build a frontend with a home page, product list page and product detail page.
+Build a frontend with home, product list, product detail and cart pages.
 
 Build admin pages to create, update and delete products.
 
@@ -26,13 +26,18 @@ Level 2 is optional.
 
 ## Strapi API
 
-To start the API change directory to `api` install the npm dependecies and then run `npm run develop`
+The Strapi project can be found <a href="https://github.com/NoroffFEU/strapi-sp2" target="_blank">here</a>.
+
+Install the npm dependencies and then run `npm run develop`:
 
 ```bash
-$ cd api
-$ npm install
-$ npm run develop
+npm install
+npm run develop
 ```
+
+You can add, edit and delete products in the API and change the Home single type content, but do not add any new properties or endpoints to the API.
+
+If you do want to add custom properties, endpoints or additional functionality you can create your own API which must be publicly hosted. Please see the Level 2 section.
 
 ## User credentials
 
@@ -50,8 +55,8 @@ password: Pass1234
 
 The home page must include:
 
--   A hero banner with an image that is uploaded to Strapi.
--   A list of featured products. In Strapi each product has a featured flag that can be turned on or off. When the flag is on, the product should be displayed on the homepage.
+-   A hero banner with an image that is uploaded to Strapi. You can find this in the `Home` single type in the provided Strapi project.
+-   A list of featured products. Each product has a featured flag that can be turned on or off. When the flag is on, the product should be displayed on the homepage. You can find the products in the `Products` collection type.
 
 #### Products page
 
@@ -83,11 +88,11 @@ Each product in the cart must display:
 
 After the list of products, display the total price of all the products in the cart.
 
-Important: the cart page is not a checkout page. No payments or user details are required to be taken.
+Note: the cart page is not a checkout page. No payments or user details are required to be taken.
 
 ### Admin section
 
-The admin section must include the following features.
+The admin section (apart from the log in form) must only be accessible to logged in admin users and must include the following features.
 
 #### Login/Logout
 
@@ -106,9 +111,11 @@ For adding/editing product images use either of these 2 methods:
 1. Use a file upload field to upload images to Strapi, or
 2. Use a text input that allows a URL to be entered. This allows an image from an external URL to be used as the product image.
 
+You can find the fields for each in Strapi. Use only one to display a product image.
+
 #### Delete existing product
 
-Allow products to be deleted. Before a product is deleted you must display a confirmation. The product should only be deleted if the user confirms. If the user cancels, the product must not be deleted.
+Allow products to be deleted. Before a product is deleted you must display a confirmation dialog. The product should only be deleted if the user confirms.
 
 ## Level 2 (optional)
 
@@ -116,4 +123,33 @@ Create your own API for the site. You can use any backend stack (e.g. Strapi, Wo
 
 The API must include all the functionality in the provided Strapi API and you can add any additional functionality.
 
-It MUST be publicly hosted and accessible, you cannot submit the API with your front end code.
+It MUST be publicly hosted and accessible, you cannot submit a custom API with your frontend code.
+
+## FAQ
+
+-   You can use CSS libraries like Bootstrap.
+-   Use Sass for your styles. Using BEM is optional but using proper class names is important.
+-   Use vanilla (regular) JavaScript for the project and split your code up using modules (imports/exports).
+-   You can use small JS libraries to perform tasks such as formatting dates with Moment.js
+
+## Marking criteria
+
+-   All functionality in Level 1 should be implemented.
+-   The design should be coherent and provide a good user experience.
+-   All the customer-facing and admin pages must be fully responsive.
+-   Use appropriate names for Sass classes and folders.
+-   All code should be properly formatted and arranged with sensible variable and function names. Use modules (imports/exports) to organise your code.
+
+## Rules
+
+-   Copying and sharing of any code will result in your project being failed.
+
+## Report
+
+The report template can be found <a href="/resources/semester-project-2-report-template.docx" target="_blank">here</a>.
+
+## Submission
+
+-   Create a folder called your-name-semester-project-2, e.g. mary-smith-semester-project-2.
+-   Add your project files and report to the folder. DO NOT submit the Strapi API files or custom API code if you created one. If you have a `node_modules` folder in your project make sure to exclude it from your submission.
+-   Zip the folder and submit the zip file.
