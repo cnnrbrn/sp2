@@ -146,6 +146,10 @@ It MUST be publicly hosted and accessible, you cannot submit a custom API with y
 
 ## Report
 
+You don't have to write an academic-style report, just discuss the project in the headings provided in the template.
+
+500 to 1000 words in total.
+
 The report template can be found <a href="/resources/semester-project-2-report-template.docx" target="_blank">here</a>.
 
 ## Submission
